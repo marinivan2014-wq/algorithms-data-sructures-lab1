@@ -30,3 +30,6 @@ def hordy(l, r, e):
         else:
             l = xk
     return xk
+
+print(polovin(l,r,e))
+print(hordy(l,r,e))
