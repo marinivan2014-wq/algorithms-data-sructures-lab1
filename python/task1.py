@@ -20,10 +20,10 @@ def polovin(l, r, e): #метод половинчатого деления
                 l = b
     return (r+l)/2
 
-def hordy(l, r, e):
+def hordy(l, r, e): #метод хорд
     while True:
         xk = l - (f(l) * (r - l)) / (f(r) - f(l))
-        if f(xk) == 0 or abs(f(xk)) < e:
+        if f(xk) == 0 or abs(f(xk)) < e: #проверка на корень
             break
         if f(xk) * f(r) > 0:
             r = xk
